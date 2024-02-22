@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+  pull_request:
+  merge_group:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@main
+    - name: dosomething
+      run: ls -la
