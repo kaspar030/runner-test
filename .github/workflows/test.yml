@@ -11,4 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: dosomething
-      run: ls -la
+      run: |
+          ls -la
+          df -h
+          free -h
+          nproc
